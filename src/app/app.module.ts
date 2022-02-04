@@ -15,6 +15,8 @@ import { HttpClientModule } from '@angular/common/http';
 /* Importacion de modulos */
 import { SharedModule } from './shared/shared.module';
 import { PaisModule } from './pais/pais.module';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { PaisModule } from './pais/pais.module';
     AppRoutingModule,
     PaisModule,
     SharedModule,
-    HttpClientModule
+    HttpClientModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
