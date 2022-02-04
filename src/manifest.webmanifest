@@ -1,7 +1,7 @@
 {
-  "name": "paisesApp",
-  "short_name": "paisesApp",
-  "theme_color": "#1976d2",
+  "name": "Paises App",
+  "short_name": "Paises App",
+  "theme_color": "#ff0000",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",
